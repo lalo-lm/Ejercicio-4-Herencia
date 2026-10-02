@@ -1,5 +1,5 @@
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
 public class Business {
     private List<Equipment> equipments;
@@ -22,7 +22,7 @@ public class Business {
         equipments.add(new SoundSystem("S-002", "Bose", "S1 Pro+", 180.0, 0.8));
     }
 
-    public boolean regiterEquipment(Equipment equipment) {
+    public boolean registerEquipment(Equipment equipment) {
         if (searchEquipment(equipment.getInventoryCode()) != null) {
             return false; 
         }
